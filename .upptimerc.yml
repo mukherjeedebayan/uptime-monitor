@@ -3,28 +3,25 @@ owner: mukherjeedebayan # Your GitHub organization or username, where this repos
 repo: uptime-monitor # The name of this repository
 
 sites:
-  - name: Debayan Mukherjee
+  - name: DM Main (debayanmukherjee.com)
     url: https://debayanmukherjee.com
-#  - name: IPv6 test
-#    url: forwardemail.net
-#    port: 80
-#    check: "tcp-ping"
-#    ipv6: true
+    maxResponseTime: 3000
+  - name: DM Store (store.debayanmukherjee.com)
+    url: https://store.debayanmukherjee.com
+    maxResponseTime: 3000
 
 status-website:
   # Add your custom domain name, or remove the `cname` line if you don't have a domain
   # Uncomment the `baseUrl` line if you don't have a custom domain and add your repo name there
-  # cname: demo.upptime.js.org
-  baseUrl: /uptime-monitor
-  logoUrl: https://raw.githubusercontent.com/upptime/upptime.js.org/master/static/img/icon.svg
-  name: Upptime
-  introTitle: "**Upptime** is the open-source uptime monitor and status page, powered entirely by GitHub."
-  introMessage: This is a sample status page which uses **real-time** data from our [GitHub repository](https://github.com/upptime/upptime). No server required — just GitHub Actions, Issues, and Pages. [**Get your own for free**](https://github.com/upptime/upptime)
+  cname: status.debayanmukherjee.com
+  #baseUrl: /uptime-monitor
+  logoUrl: https://rstr.in/debayanmukherjee/dm-store-assets/Svo08SLpavZ
+  name: DM Status
+  introTitle: "Debayan Mukherjee Infrastructure Status Page"
+  introMessage: This is a status page displaying **real-time** status data of all our services
   navbar:
-    - title: Status
-      href: /
-    - title: GitHub
-      href: https://github.com/$OWNER/$REPO
+    - title: Contact
+      href: https://store.debayanmukherjee.com/contact/
 
 # Upptime also supports notifications, assigning issues, and more
 # See https://upptime.js.org/docs/configuration
